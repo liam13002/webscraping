@@ -9,7 +9,7 @@ chapter = random.randint(1,21)
 #if chapter < 10:
     #chapter = "0" + str(chapter)
 #else:
-    #Chapter = str(chapter)
+    #chapter = str(chapter)
 
 webpage = 'https://biblehub.com/asv/john/'+ str(chapter) +".htm"
 
@@ -25,6 +25,7 @@ soup = BeautifulSoup(webpage, 'html.parser')
 page_verses = soup.findAll("p", class_='main')
 
 #print(page_verses)
+verse_list= []
 
 for verse in page_verses:
     verse_list = verse.text.split('.')

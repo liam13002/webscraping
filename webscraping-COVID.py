@@ -57,8 +57,8 @@ for row in table_rows[2:52]:
         state_best_death = state
 
     if test_rate > high_test_rate:
-        high_test_rate = death_rate
-        state_worst_test = state
+        high_test_rate = test_rate
+        state_best_test = state
     
     if test_rate < low_test_rate:
         low_test_rate = test_rate

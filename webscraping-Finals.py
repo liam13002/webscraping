@@ -44,7 +44,7 @@ for rec in myclasses:
             exam_time = cell[3].text
 
             if sch_day == day and sch_time == time:
-                print(f"Class day and time: {sch_day} - {sch_time}")
+                print(f"Class day and time: {day} - {time}")
                 print(f"Exam Day and Time: {exam_day} - {exam_time}")
                 print()
                 print()
