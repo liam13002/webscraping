@@ -38,7 +38,7 @@ my_verse = random.choice(verse_list[:len(verse_list)])
 
 #print(f"Chapter: {chapter}, Verse: {my_verse}")
 
-message = "Chapter:" + str(chapter) + " Verse: " + my_verse
+message = "Chapter:" + str(chapter) + " Verse: " + my_verse.lstrip()
 print(message)
 
 import keys
