@@ -65,8 +65,8 @@ for row in table_rows[2:52]:
         state_worst_test = state
 
     print(state)
-    print(death_rate)
-    print(test_rate)
+    print("Death rate: ", death_rate, "%")
+    print("Test rate: ", test_rate, "%")
     print()
 
 print("Best Death Rate: "+ state_best_death, " ", low_death_ratio, "%")
